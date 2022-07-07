@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+.modal-isShow {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-content {
+  max-width: 400px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 50px;
+  color: #999;
+  cursor: pointer;
+}
+.modal-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.modal-action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 20px;
+}
+.modal-submit,
+.modal-cancel {
+  border: 0;
+  font-family: "Poppins, sans-serif";
+  font-size: 16px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #999;
+  cursor: pointer;
+}
+.modal-submit {
+  background-color: #3d6ef7;
+  color: white;
+}
