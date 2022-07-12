@@ -6,5 +6,8 @@ window.addEventListener("load", function () {
     inputType === "password"
       ? input.setAttribute("type", "text")
       : input.setAttribute("type", "password");
+    // if (inputType === "password") {
+    //   input.setAttribute("type", "text");
+    // } else input.setAttribute("type", "password");
   });
 });
