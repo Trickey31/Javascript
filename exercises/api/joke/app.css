@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.joke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 50px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+.joke-heading {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.joke-button {
+  display: block;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background-color: #6a5af9;
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+  height: 54px;
+  cursor: pointer;
+}
+.loading {
+  width: 20px;
+  height: 20px;
+  border: 5px solid white;
+  border-left: 5px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s infinite linear;
+  display: none;
+}
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.joke.is-loading .joke-button {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.joke.is-loading .loading {
+  display: block;
+}
+.joke.is-loading .joke-button span {
+  display: none;
+}
