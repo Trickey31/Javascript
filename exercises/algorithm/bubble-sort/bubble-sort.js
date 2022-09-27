@@ -1,4 +1,8 @@
-// --> Độ phức tạp: O(n^2)
+/**
+ * Big O Notation: O(n^2)
+ * --> A basic, legible algorithm
+ * --> Slowest performance in sorting algorithm
+ */
 
 function bubbleSort(array) {
   const arr = [...array];
