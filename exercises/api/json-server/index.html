@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <title>Placeholder</title>
+  </head>
+  <body>
+    <form class="form-post" autocomplete="off" method="post">
+      <input
+        type="text"
+        name="image"
+        placeholder="Enter your image url"
+        required
+      />
+      <input type="text" name="title" placeholder="Enter your title" required />
+      <input
+        type="text"
+        name="author"
+        placeholder="Enter your author"
+        required
+      />
+      <input
+        type="text"
+        name="rating"
+        placeholder="Rating"
+        min="1"
+        max="5"
+        required
+      />
+      <input type="text" name="price" placeholder="Price" min="1" required />
+      <input type="text" name="buyAmount" placeholder="Amount" />
+      <div>
+        <label for="best-seller">Best Seller?</label>
+        <input type="checkbox" name="bestSeller" id="best-seller" />
+      </div>
+      <button type="submit" class="form-submit">Add course</button>
+    </form>
+    <input type="text" class="filter" name="filter" />
+    <div class="course-list"></div>
+    <script src="./placeholder.js"></script>
+  </body>
+</html>
