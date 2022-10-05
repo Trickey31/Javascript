@@ -1,5 +1,16 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": 1,
+      "title": "This is a example",
+      "author": "Trickey"
+    },
+    {
+      "title": "This is a famous boy",
+      "author": "Tiến Thành",
+      "id": 2
+    }
+  ],
   "courses": [
     {
       "image": "https://images.unsplash.com/photo-1662581872342-3f8e0145668f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
